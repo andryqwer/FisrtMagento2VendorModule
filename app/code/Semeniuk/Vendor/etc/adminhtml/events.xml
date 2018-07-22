@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_edit_action">
+        <observer name="semeniuk_vendor_loadproductvendor" instance="Semeniuk\Vendor\Observer\LoadProductVendor" />
+    </event>
+    <event name="controller_action_catalog_product_save_entity_after">
+        <observer name="semeniuk_vendor_saveproductvendor" instance="Semeniuk\Vendor\Observer\SaveProductVendor" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="semeniuk_vendor_saveproductvendor" instance="Semeniuk\Vendor\Observer\SaveProductVendorModel" />
+    </event>
+    <event name="catalog_product_attribute_update_after">
+        <observer name="semeniuk_vendor_saveattributeproductvendor" instance="Semeniuk\Vendor\Observer\MassUpdateAttributeVendorModel" />
+    </event>
+</config>

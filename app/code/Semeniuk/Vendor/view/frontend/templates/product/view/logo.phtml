@@ -1,0 +1,25 @@
+<?php
+$vendorCollection = $this->getVendorCollection();
+$vendor_text = _('Vendors: ');
+$show_vendor_text = 1;
+?>
+<?php if($vendorCollection && $vendorCollection->count()){ ?>
+    <?php
+    $i = 0;
+    $total = $vendorCollection->count();
+    if($show_vendor_text){
+        echo '<span class="vendor-label">'.$vendor_text.'</span>';
+    }
+    ?>
+    <?php
+        foreach ($vendorCollection as $_vendor) { ?>
+
+            <span class="vendor-image">
+                <img src="<?php echo $_vendor->getLogoPath(); ?>" title="<?php echo $_vendor->getName(); ?>" width="100" height="100" />
+			</span>
+            <?php if($i<=($total-2)){ echo ' '; }  ?>
+            <?php $i++; ?>
+            <?php
+        }
+    }
+?>

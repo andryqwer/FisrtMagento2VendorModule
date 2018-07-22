@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="semeniuk_vendor_vendor_listing_data_source" xsi:type="string">Semeniuk\Vendor\Model\ResourceModel\Vendor\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Semeniuk\Vendor\Model\ResourceModel\Vendor\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">semeniuk_vendor</argument>
+            <argument name="resourceModel" xsi:type="string">Semeniuk\Vendor\Model\ResourceModel\Vendor</argument>
+        </arguments>
+    </virtualType>
+    <preference for="Magento\Catalog\Block\Product\ListProduct" type="Semeniuk\Vendor\Block\Product\ListProduct" />
+</config>

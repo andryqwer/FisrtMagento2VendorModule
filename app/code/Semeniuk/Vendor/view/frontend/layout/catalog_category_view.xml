@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<update handle="catalog_category_view"/>
+<body>
+    <!--<referenceBlock name="category.products">
+        <action method="setTemplate">
+            <argument name="template" xsi:type="string">Semeniuk_Vendor::product/list.phtml</argument>
+        </action>
+        <referenceBlock name="category.products.list">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Semeniuk_Vendor::product/list.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="category.products.list">
+            <referenceBlock name="category.product.list">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Semeniuk_Vendor::product/list.phtml</argument>
+            </action>
+            </referenceBlock>
+            <referenceContainer name="category.product.list">
+                <block name="product.info.vendor" after="category.product.list.additional" template="Semeniuk_Vendor::product/list.phtml"/>
+            </referenceContainer>
+        </referenceBlock>
+    </referenceBlock>-->
+    <!--<referenceContainer name="content">
+        <referenceBlock name="category.products">
+            <block class="Semeniuk\Vendor\Block\Product\ListProduct" name="category.products.list" as="product_list" template="Semeniuk_Vendor::product/list.phtml" />
+           <action method="setTemplate">
+                <argument name="template" xsi:type="string">Semeniuk_Vendor::product/list.phtml</argument>
+            </action>
+        </referenceBlock>
+    </referenceContainer>-->
+    <referenceBlock name="category.products.list" template="Semeniuk_Vendor::product/list.phtml" />
+
+</body>
+</page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route frontName="semeniuk_vendor" id="semeniuk_vendor">
+            <module name="Semeniuk_Vendor"/>
+        </route>
+    </router>
+</config>

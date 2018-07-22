@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../
+../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Semeniuk\Vendor\Block\Adminhtml\Vendor\Edit\Tabs"
+                   name="semeniuk_vendor_vendor.edit.tabs"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Semeniuk\Vendor\Block\Adminhtml\Vendor\Edit"
+                   name="semeniuk_vendor_vendor.edit"/>
+        </referenceContainer>
+    </body>
+</page>

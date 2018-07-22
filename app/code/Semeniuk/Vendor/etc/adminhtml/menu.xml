@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Semeniuk_Vendor::vendor" title="Vendors" module="Semeniuk_Vendor" sortOrder="10" resource="Semeniuk_Vendor::semeniuk_vendor"/>
+        <add id="Semeniuk_Vendor::vendor_add" title="Add New Vendor" module="Semeniuk_Vendor" sortOrder="10"  action="semeniuk_vendor/vendor/new" resource="Semeniuk_Vendor::vendor" parent="Semeniuk_Vendor::vendor"/>
+        <add id="Semeniuk_Vendor::vendor_items" title="Manage Vendors" module="Semeniuk_Vendor" sortOrder="20" action="semeniuk_vendor/vendor/index" resource="Semeniuk_Vendor::vendor" parent="Semeniuk_Vendor::vendor"/>
+        <add id="Semeniuk_Vendor::vendor_config" title="Configurations" module="Semeniuk_Vendor" sortOrder="30" action="adminhtml/system_config/edit/section/semeniuk_vendor" resource="Semeniuk_Vendor::vendor" parent="Semeniuk_Vendor::vendor"/>
+    </menu>
+</config>
